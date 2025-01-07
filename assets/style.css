@@ -84,8 +84,9 @@ header {
 }
 
 .social-text {
-    font-size: 60px;
+    font-size: 40px;
     color: #ffffff;
+    margin-top: -5px;
 }
 
 .social-icon {
