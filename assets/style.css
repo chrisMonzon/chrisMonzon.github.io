@@ -82,7 +82,7 @@ header {
     
 }
 
-.social-text {
+.social-text a {
     font-size: 30px;
     color: #ffffff;
 }
