@@ -64,3 +64,15 @@ a:hover {
     text-decoration: underline;
     color: #00bfff; /* Brighter blue on hover */
 }
+
+footer {
+    padding: 20px;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Helvetica neue", sans-serif;
+    font-weight: 300;
+    letter-spacing: 4px;
+    line-height: 90px;
+}
