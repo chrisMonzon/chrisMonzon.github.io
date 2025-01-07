@@ -4,7 +4,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #1c1d26; /* Dark gray background */
+    background-color: #1b1826; /* Dark gray background */
     color: #ffffff; /* White font color */
 }
 
@@ -25,7 +25,7 @@ body {
 .project-card {
     display: flex;
     align-items: center;         
-    background-color: #1c1d26;
+    background-color: #1b1826;
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 20px;
