@@ -8,6 +8,34 @@ body {
     color: #ffffff; /* White font color */
 }
 
+/* Card styling */
+.project-card {
+    display: flex;
+    align-items: center;
+    background-color: #3b3b3b; /* Slightly lighter gray for contrast */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.project-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 5px; /* Rounded edges for the icon */
+}
+
+.project-details h3 a {
+    color: #1e90ff; /* Light blue for links */
+    text-decoration: none;
+}
+
+.project-details h3 a:hover {
+    text-decoration: underline;
+    color: #00bfff; /* Brighter blue on hover */
+}
+
 h1, h2 {
     color: #ffffff; /* Ensure headings are white */
 }
