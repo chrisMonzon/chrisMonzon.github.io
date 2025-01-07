@@ -28,7 +28,6 @@ body {
     background-color: #1c1d26;
     border-radius: 10px;
     padding: 15px;
-    font-weight: 900;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     outline: 0.5px solid #ffffff;
@@ -45,6 +44,7 @@ body {
 
 .project-details h3 a {
     color: #1e90ff; /* Light blue for links */
+    font-weight: 1500;
     text-decoration: none;
 }
 
