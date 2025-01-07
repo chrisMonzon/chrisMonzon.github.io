@@ -25,11 +25,12 @@ body {
 .project-card {
     display: flex;
     align-items: center;         /* Ensures the icon and title align vertically */
-    background-color: #3b3b3b;
+    background-color: #1c1d26;
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: 3px solid #1e90ff;
 }
 
 .project-icon {
