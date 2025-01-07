@@ -20,6 +20,7 @@ body {
     margin-right: 20px;         
     margin-left: 5px;
     margin-top: 0;
+    filter: invert(100%);
 }
 
 .project-card {
