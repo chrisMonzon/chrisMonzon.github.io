@@ -42,7 +42,7 @@ body {
     margin-right: 15px;
     border-radius: 5px;
     display: block; 
-    align-self: center; 
+    align-self: left; 
     filter: invert(100%);
 }
 
