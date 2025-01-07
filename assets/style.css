@@ -50,13 +50,14 @@ body {
 .project-details {
     display: flex;
     flex-direction: column; /* Stack the project title and description vertically */
-    margin-left: 50px; /* Add a little space between the icon and text */
+    
 }
 
 .project-details h3 {
     margin: 0;
     line-height: 1.5;
     font-weight: 1000;
+    margin-left: 30px; /* Add a little space between the icon and text */
 }
 
 
