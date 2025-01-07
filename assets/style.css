@@ -26,14 +26,21 @@ body {
 
 .project-card {
     display: flex;
-    flex-direction: row; /* Make sure items are aligned horizontally */
-    align-items: center; /* Vertically align icon and title */
+    flex-direction: row;
+    align-items: center;
     background-color: #1b1e26;
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     outline: 0.5px solid #ffffff;
+    transition: transform 0.3s ease, outline-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    outline-color: #e0db79; /* Change outline to yellow */
+    box-shadow: 0 6px 12px rgba(255, 255, 0, 0.4); /* Brighter shadow */
 }
 
 .project-icon {
