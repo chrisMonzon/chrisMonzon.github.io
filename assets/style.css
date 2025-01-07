@@ -83,3 +83,11 @@ footer {
     letter-spacing: 4px;
     line-height: 90px;
 }
+
+.social {
+    display: flex;
+    gap: 15px;
+    margin-right: 50px;
+    position: relative;
+    top: -25px;
+}
