@@ -39,7 +39,7 @@ body {
 .project-icon {
     width: 50px;
     height: 50px;
-    margin-right: 5px; /* Space between icon and title */
+    margin-right: 10px; /* Space between icon and title */
     margin-left: 5px; /* Space between icon and title */
     margin-top: 1px;
     border-radius: 5px;
@@ -57,7 +57,6 @@ body {
     margin: 0;
     line-height: 1.5;
     font-weight: 1000;
-    margin-left: 30px; /* Add a little space between the icon and text */
 }
 
 
@@ -75,7 +74,7 @@ header {
 }
 
 .social-icon {
-    font-size: 30px;
+    font-size: 24px;
     color: #ffffff;
     text-decoration: none;
     filter: invert(100%); /* Invert icon colors */
