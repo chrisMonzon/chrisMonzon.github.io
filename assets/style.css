@@ -93,6 +93,14 @@ header {
     height: 30px;
 }
 
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    display: block; /* Avoid spacing issues from inline elements */
+    filter: invert(100%);
+}
+
+
 h1, h2 {
     color: #ffffff; /* Ensure headings are white */
 }
