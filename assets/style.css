@@ -9,22 +9,22 @@ body {
 }
 
 .profile-container {
-    display: flex;              /* Align the image and text side by side */
-    align-items: center;        /* Vertically align image and text */
+    display: flex;              
+    align-items: center;       
 }
 
 .profile-icon {
-    width: 150px;               /* Set the size of the image */
-    height: 150px;              /* Make it a square */
-    border-radius: 50%;         /* Make the image circular */
-    margin-right: 20px;         /* Add space between the image and the text */
+    width: 150px;            
+    height: 150px;           
+    border-radius: 50%;         
+    margin-right: 20px;         
     margin-left: 5px;
     margin-top: 0;
 }
 
 .project-card {
     display: flex;
-    align-items: center;         /* Ensures the icon and title align vertically */
+    align-items: center;         
     background-color: #1c1d26;
     border-radius: 10px;
     padding: 15px;
@@ -38,20 +38,20 @@ body {
     height: 50px;
     margin-right: 15px;
     border-radius: 5px;
-    margin-top: 0;
     display: block; 
+    align-self: center; 
 }
 
-.project-details h3 a {
-    color: #1e90ff; /* Light blue for links */
-    font-weight: 1500;
-    text-decoration: none;
+.project-details {
+    display: flex;
+    align-items: center; 
 }
 
-.project-details h3 a:hover {
-    text-decoration: underline;
-    color: #00bfff; /* Brighter blue on hover */
+.project-details h3 {
+    margin: 0;
+    line-height: 50px;
 }
+
 
 header {
     font-size: 40px;
