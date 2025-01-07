@@ -4,7 +4,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #000000; /* Dark gray background */
+    background-color: #1c1d26; /* Dark gray background */
     color: #ffffff; /* White font color */
 }
 
@@ -14,8 +14,8 @@ body {
 }
 
 .profile-icon {
-    width: 200px;               /* Set the size of the image */
-    height: 200px;              /* Make it a square */
+    width: 150px;               /* Set the size of the image */
+    height: 150px;              /* Make it a square */
     border-radius: 50%;         /* Make the image circular */
     margin-right: 20px;         /* Add space between the image and the text */
     margin-left: 5px;
