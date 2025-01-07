@@ -52,12 +52,13 @@ body {
 .project-details h3 {
     margin: 0;
     line-height: 1.5;
+    font-weight: 1000;
 }
 
 
 header {
     font-size: 40px;
-    font-weight: 400px;
+    font-weight: 800px;
 }
 
 h1, h2 {
