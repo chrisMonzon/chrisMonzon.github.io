@@ -1,29 +1,19 @@
----
-layout: default
-title: "Christopher Monzon"
-description: "Welcome to my personal website"
----
-
-# Welcome to My Personal Website!
-
-Hello! I'm **Your Name**, a [Your Title or Role] passionate about [Your Interests]. This site is a hub for my projects, portfolio, and blog. Feel free to explore!
-
----
+# Christopher Monzon
 
 ## About Me
 
-I'm a [Your Profession or Field] based in [Your Location]. My journey started with [Brief Background], and I've since developed skills in:
-- Skill 1
-- Skill 2
-- Skill 3
+I'm a third-year student studying Computer Science at the University of Illinois at Urbana-Champaign. My passion lies in graphics, media, and data visualization. Skilled in collaboration and problem-solving, I thrive in dynamic environments where creativity and technical expertise intersect. I am eager to contribute and enhance my skills to help develop innovative solutions.
 
-When I'm not working on [Your Main Work], I enjoy [Your Hobbies].
+## Languages
+- C++
+- C
+- Python
 
 ---
 
 ## Projects
 
-### [Project Name](#)
+### [Building Block Simulator](#)
 **Description**: A brief description of what the project does or aims to achieve.  
 **Technologies Used**: [Tech 1], [Tech 2], [Tech 3].  
 
@@ -44,4 +34,4 @@ I'd love to hear from you! Feel free to reach out:
 
 ---
 
-_© YYYY Your Name. All rights reserved._
+_© 2025 Christopher Monzon. All rights reserved._
