@@ -50,7 +50,7 @@ body {
 .project-details {
     display: flex;
     flex-direction: column; /* Stack the project title and description vertically */
-    
+    margin-left: 10px;
 }
 
 .project-details h3 {
