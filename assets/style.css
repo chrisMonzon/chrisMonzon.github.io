@@ -39,7 +39,9 @@ body {
 .project-icon {
     width: 50px;
     height: 50px;
-    margin-right: 15px; /* Space between icon and title */
+    margin-right: 5px; /* Space between icon and title */
+    margin-left: 5px; /* Space between icon and title */
+    margin-top: 1px;
     border-radius: 5px;
     display: block; 
     filter: invert(100%); /* Invert icon colors */
