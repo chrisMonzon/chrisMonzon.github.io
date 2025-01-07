@@ -63,6 +63,19 @@ header {
     font-weight: 800px;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    gap: 20px; /* Space between icons */
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
 h1, h2 {
     color: #ffffff; /* Ensure headings are white */
 }
