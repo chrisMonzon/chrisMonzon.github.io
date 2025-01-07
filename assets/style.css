@@ -26,8 +26,8 @@ body {
 
 .project-card {
     display: flex;
-    flex-direction: column; /* Stack title and description vertically */
-    align-items: flex-start; /* Align text to the left */
+    flex-direction: row; /* Make sure items are aligned horizontally */
+    align-items: center; /* Vertically align icon and title */
     background-color: #1b1e26;
     border-radius: 10px;
     padding: 15px;
@@ -39,11 +39,10 @@ body {
 .project-icon {
     width: 50px;
     height: 50px;
-    margin-right: 15px;
+    margin-right: 15px; /* Space between icon and title */
     border-radius: 5px;
     display: block; 
-    align-self: left; 
-    filter: invert(100%);
+    filter: invert(100%); /* Invert icon colors */
 }
 
 .project-details {
