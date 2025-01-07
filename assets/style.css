@@ -74,6 +74,7 @@ header {
     font-size: 30px;
     color: #ffffff;
     text-decoration: none;
+    filter: invert(100%); /* Invert icon colors */
 }
 
 h1, h2 {
