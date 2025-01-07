@@ -52,6 +52,11 @@ body {
     color: #00bfff; /* Brighter blue on hover */
 }
 
+header {
+    font-size: 40px;
+    font-weight: 400px;
+}
+
 h1, h2 {
     color: #ffffff; /* Ensure headings are white */
 }
