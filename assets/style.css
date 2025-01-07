@@ -88,7 +88,7 @@ header {
 }
 
 .social-icon {
-    filter: invert(100%); /* Invert icon colors */
+/*     filter: invert(100%); */
     width: 30px;
     height: 30px;
 }
