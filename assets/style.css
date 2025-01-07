@@ -71,6 +71,7 @@ header {
     justify-content: center; /* Center the icons */
     gap: 20px; /* Space between icons */
     margin-top: 10px;
+    white-space: nowrap;
 }
 
 .social-icon {
