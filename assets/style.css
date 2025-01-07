@@ -71,11 +71,11 @@ header {
     gap: 20px; /* Space between icons */
     margin-top: 10px;
     white-space: nowrap;
+    font-size: 24px;
+    color: #ffffff;
 }
 
 .social-icon {
-    font-size: 24px;
-    color: #ffffff;
     text-decoration: none;
     filter: invert(100%); /* Invert icon colors */
     width: 50px;
