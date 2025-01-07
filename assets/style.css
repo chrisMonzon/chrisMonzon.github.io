@@ -48,7 +48,7 @@ body {
 .project-details {
     display: flex;
     flex-direction: column; /* Stack the project title and description vertically */
-    margin-left: 10px; /* Add a little space between the icon and text */
+    margin-left: 50px; /* Add a little space between the icon and text */
 }
 
 .project-details h3 {
