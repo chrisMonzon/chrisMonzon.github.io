@@ -16,15 +16,63 @@ body {
 }
 
 .profile-icon {
-    width: 175px;            
-    height: 175px;           
-    border-radius: 50%;         
-    margin-right: 20px;         
-    margin-left: 5px;
+    display: inline-block;
+    justify-content: center; 
+    margin-left: 3vh;
+    width: 200px;            
+    height: 200px;           
+    border-radius: 50%;    
     margin-top: 0;
 }
 
+.render-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: rgb(107,102,143);
+    background: linear-gradient(180deg, rgba(107,102,143,1) 0%, rgba(188,231,230,1) 44%, rgba(254,254,254,1) 100%);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: 0.5px solid #ffffff;
+    transition: transform 0.3s ease, outline-color 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.render-card img {
+    max-width: 400px;
+    max-height: 400px;
+    filter: brightness(125%);
+    margin-right: 0px;
+}
+.render-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 30px;
+    margin-top: 10px;
+    color: #000000;
+}
+
+.render-bullets {
+    display: flex;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #000000;
+}
+
+.render-card:hover {
+    transform: scale(1.05); 
+    outline-color: #e0db79; 
+    box-shadow: 0 6px 12px rgba(255, 255, 0, 0.4); 
+}
+
+.title {
+    font-size: 40px;
+}
 .project-card {
+    max-width: 100%;
+    height: auto; 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -77,11 +125,8 @@ header {
 .social-icons {
     display: flex;
     justify-content: center; 
-    gap: 20px; 
+    gap: 25px; 
     margin-top: -5px;
-    white-space: nowrap;
-    padding: 5px;
-    
 }
 
 .social-text {
@@ -101,7 +146,7 @@ header {
     height: 50px;
     display: inline-block;
     filter: invert(100%);
-    margin: 0;
+    /* margin: 0; */
 }
 
 
