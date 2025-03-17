@@ -9,11 +9,12 @@
 </head>
 <body>
     <div class="sidebar">
+        <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#renders">Renders</a>
         <a href="#graphic-design">Graphic Design</a>
     </div>
-    <header>
+    <header id="about">
         <h1>Christopher Monzon</h1>
     </header>
     <div class="social-icons">
@@ -49,9 +50,18 @@
         </div>
         <br>
          <div class="project-card">
+             <img src="assets/icons/nodes.png" class="project-icon">
+             <div class="project-details">
+                 <h3><a href="https://play.math.illinois.edu/ColorTaiko!/">> ColorTaiko!</a></h3>
+                 <p style="font-size: 15px;"> A web-based game I'm contributing to under the Illinois Mathematics Lab (IML). </p>
+                 <p style="margin-top:0px; font-size: 14px;">Working with Professor Igor Mineyev and 5 other students, we're building an interface to help produce counterxamples to the Kaplansky conjectures.</p>
+                 <p><strong>Stack:</strong> React, Javascript</p>
+             </div>
+         </div>
+         <div class="project-card">
              <img src="assets/icons/rubiks.png" class="project-icon">
              <div class="project-details">
-                 <h3><a href="https://chrismonzon.github.io/CustomRubiks/">> [BETA VER] Custom Rubik's Cube Simulator</a></h3>
+                 <h3><a href="https://chrismonzon.github.io/CustomRubiks/">> Custom Rubik's Cube Simulator</a></h3>
                  <p>A graphics simulation program allowing users to upload .obj files to be converted into a fully interactable & playable, 2x2x2 Rubik's cube </p>
                  <p><strong>Stack:</strong> Javascript, WebGL</p>
              </div>
@@ -85,7 +95,7 @@
         <br>
         <div class="render-card">
             <div class="render-details">
-                <strong>> Sample Character Model</strong>
+                <strong><i>Sample Character Model</i></strong>
                 <div class="render-bullets">
                     <ul>
                         <li>EDGES: 4374</li>
@@ -100,7 +110,7 @@
         <br>
         <div class="render-card">
             <div class="render-details">
-                <strong>> Sample Scene</strong>
+                <strong><i>Sample Scene</i></strong>
                 <div class="render-bullets">
                     <ul>
                         <li>EDGES: 16824</li>
@@ -119,15 +129,16 @@
             <strong><i>GRAPHIC DESIGN</i></strong><class>
         </div>
         <br>
+        <!-- <div style="padding-left: min(10vh, 100%);"> -->
         <div class="logo-container">
             <div style="display: flex; flex-direction: row;">
                 <div class="logo-card">
                     <img src="assets/logos/tbp_pimile_logo.png" alt="Comic logo">
-                    <p class="logo-text">Tau Beta Pi | Pi Mile Run</p>
+                    <p class="logo-text" style="font-size: 13px;">Tau Beta Pi | Pi Mile Run</p>
                 </div>
                 <div class="logo-card">
                     <img src="assets/logos/Hillsdale_robotics_icon.png" alt="Comic logo" style="margin-left: 0px;">
-                    <p class="logo-text">Hillsdale Robotics Mascot</p>
+                    <p class="logo-text" style="font-size: 13px;">Hillsdale Robotics Mascot</p>
                 </div>
                 <div class="logo-card">
                     <img src="assets/logos/Hillsdale_mock_trial_logo.png" alt="Comic logo">
@@ -139,19 +150,19 @@
             <div style="display: flex; flex-direction: row;">
                 <div class="logo-card">
                     <img src="assets/logos/Comic_logo_concept.png" alt="Comic logo">
-                    <p class="logo-text">Concept Comic Logo</p>
+                    <p class="logo-text">&nbsp&nbspConcept Comic Logo&nbsp&nbsp</p>
                 </div>
                 <div class="logo-card">
                     <img src="assets/logos/rso_search_logo.png" alt="Comic logo">
-                    <p class="logo-text">RSO Search App Static Logo</p>
+                    <p class="logo-text">RSO Search App Logo</p>
                 </div>
                 <div class="logo-card">
                     <img src="assets/logos/animloop.gif" alt="Comic logo">
-                    <p class="logo-text">RSO Search App Loading</p>
+                    <p class="logo-text" style="font-size: 13px;">RSO Search App - Loading</p>
                 </div>
             </div>
         </div>
-        
+        <!-- </div> -->
     </main>
 
     <footer>
