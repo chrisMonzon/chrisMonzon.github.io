@@ -29,23 +29,30 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    background: #a3c6cf;
     background: linear-gradient(180deg, rgba(107,102,143,1) 0%, rgba(188,231,230,1) 44%, rgba(254,254,254,1) 100%);
     border-radius: 10px;
     padding: 15px;
     /* gap: 40px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     outline: 0.5px solid #ffffff;
-    /* transition: transform 0.3s ease, outline-color 0.3s ease, box-shadow 0.3s ease; */
+    transition: transform 0.3s ease, outline-color 0.3s ease, box-shadow 0.3s ease;
     min-width: 200px; 
+    max-width: 200px; 
     min-height: 200px;
     
+}
+
+.logo-card:hover {
+    transform: scale(1.05); 
+    outline-color: #e0db79; 
+    box-shadow: 0 6px 12px rgba(255, 255, 0, 0.4); 
 }
 
 .logo-text {
     font-size: 14px;
     color: #333;
     margin: 0;
+    font-style: italic;
     /* margin-top: 5px;  */
 }
 
@@ -64,15 +71,14 @@ body {
 .logo-card img {
     max-width: 200px; 
     max-height: 200px;
-    /* object-fit: contain; */
     filter: brightness(125%);
+    object-fit: contain;
 }
 
 .render-card {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    background: rgb(107,102,143);
     background: linear-gradient(180deg, rgba(107,102,143,1) 0%, rgba(188,231,230,1) 44%, rgba(254,254,254,1) 100%);
     border-radius: 10px;
     padding: 15px;
@@ -83,10 +89,14 @@ body {
 }
 
 .render-card img {
-    max-width: 400px; 
-    max-height: 400px;
+    /* max-width: 400px;  */
+    max-width: 70%;
+    /* max-height: 400px; */
+    height: auto;
     filter: brightness(125%);
     margin-right: 0px;
+    object-fit: contain;
+    overflow:auto;
 }
 .render-details {
     display: flex;
@@ -95,6 +105,7 @@ body {
     font-size: 30px;
     margin-top: 10px;
     color: #000000;
+    font-style: italic;
 }
 
 .render-bullets {
@@ -229,7 +240,6 @@ footer {
     top: -25px;
 }
 
-
 .sidebar {
     position: fixed;
     left: 0;
@@ -241,6 +251,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 3;
 }
 
 .sidebar a {
@@ -251,12 +262,18 @@ footer {
     width: 100%;
     text-align: center;
     font-weight: bold;
+    
 }
 
 .sidebar a:hover {
     background-color: #34495e;
+    border-radius: 10px;
+    padding: 20px 8px;
 }
 
-/* body {
-    margin-right:175px;
-} */
+body {
+    /* margin-left:29vh; */
+    padding-left: min(32vh, 100%);
+    padding-right: min(15vh, 100%);
+}
+
