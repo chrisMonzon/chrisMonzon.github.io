@@ -11,8 +11,8 @@
     <div class="sidebar">
         <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
-        <a href="#renders">Renders</a>
-        <a href="#graphic-design">Graphic Design</a>
+        <a href="#renders">Designs</a>
+        <!-- <a href="#graphic-design">Graphic Design</a> -->
     </div>
     <header id="about">
         <h1>Christopher Monzon</h1>
@@ -51,44 +51,63 @@
         <br>
         <div class="project-card">
             <div class="project-details"></div>
-            <div class="project-details">
-                <a href="https://medicine.illinois.edu/innovation/jumpsimulationcenter"><img src="assets/jump2.png" width="300px"></a>
-                 <p style="font-size: 15px;"> • This past summer, I had the pleasure of contributing to the Jump Simulation Center's simulation for Acute Respiratory Distress Syndrome (ARDS). </p>
-                 <p style="margin-top:0px; font-size: 15px;"> • I collaborated with teams of programmers and artists, hailing from UIUC🇺🇸 and NYCU🇹🇼, to design and implement an immersive healthcare simulation for diagnosing and treating ARDS. </p>
-                 <br>
+            <div class="project-details description">
+                <br>
+                <div class="sig-logo">
+                    <a href="https://medicine.illinois.edu/innovation/jumpsimulationcenter"><img src="assets/jump2.png" width="275px"></a>
+                </div> 
+                <p style="font-size: 15px;"> • This past summer, I had the pleasure of contributing to the Jump Simulation Center's simulation for Acute Respiratory Distress Syndrome (ARDS). </p>
+                 <!-- <p style="margin-top:0px; font-size: 15px;"> • I collaborated with teams of programmers and artists, hailing from UIUC🇺🇸 and NYCU🇹🇼, to design and implement an immersive healthcare simulation for diagnosing and treating ARDS. </p> -->
                  <p style="margin-top:0px; font-size: 15px;"><strong>Contributions:</strong> </p>
-                 <p style="margin-top:0px; font-size: 13px;"> • Performant, detailed textures & shaders for the virtual patient, including gradually worsening symptoms, following stakeholder specifications</p>
-                 <p style="margin-top:0px; font-size: 13px;"> • Live-time lip sync seamlessly integrated with the virtual patient's AI text-to-speech systems</p>
+                 <p style="margin-top:0px; font-size: 13px;"> • Performant, detailed textures & shaders for the virtual patient</p>
                  <p style="margin-top:0px; font-size: 13px;"> • Dynamic scripts integrating animations and audio based on virtual patient behavior</p>
+                 <p style="margin-top:0px; font-size: 13px;"> • 200% increase in performance through targeted optimizations</p>
                  
                  <p><strong>Stack:</strong> Unity, C#, Blender</p>
              </div>
              <div class="project-details">
             <div class="player">
-             <iframe width="500px" height="500px"
+             <iframe width="340px" height="340px"
                 src="https://www.youtube.com/embed/bS9nRRGyKuU">
             </iframe>
             </div>
             <div class="row">
-            <iframe width="248px" height="248px"
+            <iframe width="165px" height="165px"
                 src="https://www.youtube.com/embed/hgJI_ryLtSg" padding="5px">
             </iframe>
-            <iframe width="248px" height="248px"
+            <iframe width="165px" height="165px"
                 src="https://www.youtube.com/embed/U7nj1AqxC0M" padding="5px">
             </iframe>
             </div>
             </div>
             </div>
         </div>
-         <div class="project-card">
-             <img src="assets/icons/nodes.png" class="project-icon">
-             <div class="project-details">
-                 <h3><a href="https://play.math.illinois.edu/ColorTaiko!/">> ColorTaiko!</a></h3>
-                 <p style="font-size: 15px;"> A web-based game I'm contributing to under the Illinois Mathematics Lab (IML). </p>
-                 <p style="margin-top:0px; font-size: 14px;">Working with Professor Igor Mineyev and 5 other students, we're building an interface to help produce counterxamples to the Kaplansky conjectures.</p>
-                 <p><strong>Stack:</strong> React, JavaScript</p>
-             </div>
-         </div>
+        <div class="project-card">
+            <div class="project-details"></div>
+            <div class="project-details description">
+                
+                <div class="sig-logo">
+                    <img src="assets/icons/logo4.png" width="275px">
+                </div>
+                <p style="font-size: 15px;"> • where2? is an app that enables students to locate on-campus resources, including meeting room locations and food trucks. </p>
+                <p style="font-size: 15px;"> • As Chair of ACM SIGMobile, I led the development of this app, alongside ~10 other students. </p>
+                <p><strong>Stack:</strong> Flutter, MongoDB, AWS, Python</p>
+            </div>
+            <div class="project-details"></div>
+            <div class="project-details"></div>
+            <img src="assets/icons/where2.gif" width="310px" height="auto" style="border-radius: 20px;">
+            <div class="project-details"></div>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/icons/nodes.png" class="project-icon">
+            <div class="project-details">
+                <h3><a href="https://play.math.illinois.edu/ColorTaiko!/">> ColorTaiko!</a></h3>
+                <p style="font-size: 15px;"> A web-based game I'm contributing to under the Illinois Mathematics Lab (IML). </p>
+                <p style="margin-top:0px; font-size: 14px;">Working with Professor Igor Mineyev and 5 other students, we're building an interface to help produce counterxamples to the Kaplansky conjectures.</p>
+                <p><strong>Stack:</strong> React, JavaScript</p>
+            </div>
+        </div>
         <div class="project-card">
              <img src="assets/icons/shopping.png" class="project-icon">
              <div class="project-details">
@@ -126,46 +145,18 @@
         <hr>
         <br>
         <div class="title" id="renders">
-            <strong><i>MAYA RENDERS</i></strong><class>
+            <strong><i>DESIGNS & RENDERS</i></strong><class>
         </div>
         <br>
-        <div class="render-card">
-            <div class="render-details">
-                <strong><i>Sample Character Model</i></strong>
-                <div class="render-bullets">
-                    <ul>
-                        <li>EDGES: 4374</li>
-                        <li>VERTICES: 2160</li>
-                        <li>FACES: 2246</li>
-                    </ul>
-                </div>
+        <div class="row2">
+            <div class="render-card">
+                <img src="assets/bochaopt.gif" alt="Bocha" >
             </div>
-            
-            <img src="assets/bochaopt.gif" alt="Bocha" >
-        </div>
-        <br>
-        <div class="render-card">
-            <div class="render-details">
-                <strong><i>Sample Scene</i></strong>
-                <div class="render-bullets">
-                    <ul>
-                        <li>EDGES: 16824</li>
-                        <li>VERTICES: 8468</li>
-                        <li>FACES: 8624</li>
-                    </ul>
-                </div>
+            <div class="render-card">            
+                <img src="assets/nekodinopt.gif" alt="Bocha" >
             </div>
-            
-            <img src="assets/nekodinopt.gif" alt="Bocha" >
         </div>
         <br>
-        <hr>
-        <br>
-        <div class="title" id="graphic-design">
-            <strong><i>GRAPHIC DESIGN</i></strong><class>
-        </div>
-        <br>
-        <!-- <div style="padding-left: min(10vh, 100%);"> -->
         <div class="logo-container">
             <div style="display: flex; flex-direction: row;">
                 <div class="logo-card">
@@ -198,7 +189,6 @@
                 </div>
             </div>
         </div>
-        <!-- </div> -->
     </main>
 
     <footer>
