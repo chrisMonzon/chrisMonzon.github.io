@@ -1,154 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christopher Monzon Portfolio</title>
-    <link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christopher Monzon Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <div class="sidebar">
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#renders">Designs</a>
-        <!-- <a href="#graphic-design">Graphic Design</a> -->
+  <nav class="navbar">
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#renders">Designs</a>
+    </nav>
+  <header id="about">
+    <h1>Christopher Monzon</h1>
+    <div class="profile-icon">
+      <img src="assets/icons/faceg.png">
     </div>
-    <header id="about">
-        <h1>Christopher Monzon</h1>
-    </header>
     <div class="social-icons">
-        <img src="assets/icons/faceg.png" class="profile-icon">
+      <a href="files/christophermonzon_cv.pdf"><img src="assets/icons/cv3.png"></a>
+      <a href="mailto:christopher.a.monzon@gmail.com"><img src="assets/icons/mail.png"></a>
+      <a href="https://github.com/chrisMonzon"><img src="assets/icons/github.png"></a>
+      <a href="https://www.linkedin.com/in/christopher-monzon-53661424b/"><img src="assets/icons/linkedin.png"></a>
     </div>
     <br>
-    <div class="social-icons">
-        <a href="files/christophermonzon_cv.pdf" class="social-icon"><img src="assets/icons/cv3.png"></a>
-        <a href="mailto:christopher.a.monzon@gmail.com" class="social-icon"><img src="assets/icons/mail.png"></a>
-        <a href="https://github.com/chrisMonzon" class="social-icon"><img src="assets/icons/github.png"></a>
-        <a href="https://www.linkedin.com/in/christopher-monzon-53661424b/" class="social-icon"><img src="assets/icons/linkedin.png"></a>
-        
-    </div>
-    <br>
-    <br>
-    <hr>
-    <br>
-    <main>
-        <br>
-        <div class="profile-container">
-            <ul>
-                <li>🏫 I'm a third-year student studying Computer Science at the University of Illinois at Urbana-Champaign  </li>
-                <li>📊 My passion lies in algorithms, graphics, mobile/web dev, media, and data visualization </li>
-                <li>💡 I thrive in dynamic environments where creativity and technical expertise intersect </li>
-                <li>🌱 I'm actively honing my skills to help develop innovative solutions  </li>
-            </ul>
+  </header>
+
+  <main>
+    <hr style="width: 53%;">
+  <section class="intro">
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <ul>
+      <li>🏫 CS @ UIUC</li>
+      <li>📊 My passion lies in algorithms, graphics, mobile/web dev, media, and data visualization</li>
+      <li>💡 I thrive in dynamic environments where creativity and technical expertise intersect</li>
+      <li>🌱 I'm actively honing my skills to help develop innovative solutions</li>
+    </ul>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+  </section>
+      <hr style="width: 53%;">
+      <br>
+  <h2 id="projects">PROJECTS</h2>
+  <div class="projects-grid">
+  <!-- Jump Simulation -->
+    <div class="project-card jumpxr">
+        <div class="project-details">
+            <div class="spacer"></div>
+            <img src="assets/jump2.png" class="project-logo0">
+            <!-- <br>
+              -->
+            <div class="spacer"></div>
+            <p>• This past summer, I interned at the Jump Simulation Center, and had the pleasure of working on their ARDS healthcare simulation.</p>
+            <p>• I wrote shaders and textures for a virtual patient, integrated dynamic animations/audio, and ultimately yielded a 200% performance increase through optimizations.</p>
+            <div class="spacer"></div><div class="spacer"></div>
+            <p><strong>Stack:</strong> Unity, C#, Blender</p>
         </div>
-        <br><br>
-        <hr>
-        <br><br>
-        <div class="title" id="projects">
-            <strong><i>PROJECTS</i></strong><class>
-        </div>
-        <br>
-        <div class="project-card">
-            <div class="project-details"></div>
-            <div class="project-details description">
-                <br>
-                <div class="sig-logo">
-                    <a href="https://medicine.illinois.edu/innovation/jumpsimulationcenter"><img src="assets/jump2.png" width="275px"></a>
-                </div> 
-                <p style="font-size: 15px;"> • This past summer, I had the pleasure of contributing to the Jump Simulation Center's simulation for Acute Respiratory Distress Syndrome (ARDS). </p>
-                 <!-- <p style="margin-top:0px; font-size: 15px;"> • I collaborated with teams of programmers and artists, hailing from UIUC🇺🇸 and NYCU🇹🇼, to design and implement an immersive healthcare simulation for diagnosing and treating ARDS. </p> -->
-                 <p style="margin-top:0px; font-size: 15px;"><strong>Contributions:</strong> </p>
-                 <p style="margin-top:0px; font-size: 13px;"> • Performant, detailed textures & shaders for the virtual patient</p>
-                 <p style="margin-top:0px; font-size: 13px;"> • Dynamic scripts integrating animations and audio based on virtual patient behavior</p>
-                 <p style="margin-top:0px; font-size: 13px;"> • 200% increase in performance through targeted optimizations</p>
-                 
-                 <p><strong>Stack:</strong> Unity, C#, Blender</p>
-             </div>
-             <div class="project-details">
-            <div class="player">
-             <iframe width="340px" height="340px"
-                src="https://www.youtube.com/embed/bS9nRRGyKuU">
-            </iframe>
-            </div>
-            <div class="row">
-            <iframe width="165px" height="165px"
-                src="https://www.youtube.com/embed/hgJI_ryLtSg" padding="5px">
-            </iframe>
-            <iframe width="165px" height="165px"
-                src="https://www.youtube.com/embed/U7nj1AqxC0M" padding="5px">
-            </iframe>
-            </div>
-            </div>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-details"></div>
-            <div class="project-details description">
+        <div class="media">
+            <br><br><br><br><br>
+            <div class="carousel">
+                <button class="prev">&#10094;</button>
+                <div class="carousel-track">
+                <video controls>
+                    <source src="assets/YTDown.com_Shorts_ARDS-Demo_Media_bS9nRRGyKuU_001_1080p.mp4" type="video/mp4">
+                </video>
+                <video controls>
+                    <source src="assets/Symptoms.mp4" type="video/mp4">
+                </video>
+                <video controls>
+                    <source src="assets/LipSync.mp4" type="video/mp4">
+                </video>
                 
-                <div class="sig-logo">
-                    <img src="assets/icons/logo4.png" width="275px">
                 </div>
-                <p style="font-size: 15px;"> • where2? is an app that enables students to locate on-campus resources, including meeting room locations and food trucks. </p>
-                <p style="font-size: 15px;"> • As Chair of ACM SIGMobile, I led the development of this app, alongside ~10 other students. </p>
-                <p><strong>Stack:</strong> Flutter, MongoDB, AWS, Python</p>
+                <button class="next">&#10095;</button>
             </div>
-            <div class="project-details"></div>
-            <div class="project-details"></div>
-            <img src="assets/icons/where2.gif" width="310px" height="auto" style="border-radius: 20px;">
-            <div class="project-details"></div>
         </div>
 
-        <div class="project-card">
-            <img src="assets/icons/nodes.png" class="project-icon">
+    </div>
+    
+    
+    <!-- where2? -->
+    <div class="project-card sigmobile">
+        <div class="project-details">
+            <div class="project-logo">
+                <img src="assets/icons/logo4.png" alt="where2? logo">
+            </div>
+            <div class="spacer"></div><div class="spacer"></div>
+            <p>• where2? is an app that helps students locate on-campus resources, including meeting room locations & food trucks.</p>
+            <p>• As Chair of ACM SIGMobile, I led its development, having worked with ~10 other students.</p>
+            <div class="spacer"></div>
+            <p><strong>Stack:</strong> Flutter, MongoDB, AWS, Python</p>
+        </div>
+        <div class="media">
+            <img src="assets/icons/where2.gif" alt="where2? demo" class="screenshot">
+        </div>
+        </div>
+
+
+    <!-- ColorTaiko -->
+    <div class="project-card">
+        <div class ="project-title">
             <div class="project-details">
-                <h3><a href="https://play.math.illinois.edu/ColorTaiko!/">> ColorTaiko!</a></h3>
-                <p style="font-size: 15px;"> A web-based game I'm contributing to under the Illinois Mathematics Lab (IML). </p>
-                <p style="margin-top:0px; font-size: 14px;">Working with Professor Igor Mineyev and 5 other students, we're building an interface to help produce counterxamples to the Kaplansky conjectures.</p>
+                <div class ="project-title">
+                    <img src="assets/icons/nodes.png" class="project-icon">
+                    <h3><a href="https://play.math.illinois.edu/ColorTaiko!/">&#8203Research: ColorTaiko!</a></h3>
+                </div>
+                <p>A web-based game I'm contributing to under the Illinois Mathematics Lab (IML).</p>
+                <p>Working with Professor Igor Mineyev and a team to produce counterexamples to Kaplansky conjectures.</p>
                 <p><strong>Stack:</strong> React, JavaScript</p>
             </div>
         </div>
-        <div class="project-card">
-             <img src="assets/icons/shopping.png" class="project-icon">
-             <div class="project-details">
-                 <h3><a href="https://jollibuy.vercel.app/">> JolliBuy</a></h3>
-                 <p> An online market promoting and empowering Filipino small businesses. As a part of PSA (Philippine Student Assoication)'s Tech Team, I led the frontend development of this project. </p>
-                 <p><strong>Stack:</strong> React, Python, JavaScript, Django</p>
-             </div>
-         </div>
-         <div class="project-card">
-             <img src="assets/icons/rubiks.png" class="project-icon">
-             <div class="project-details">
-                 <h3><a href="https://chrismonzon.github.io/CustomRubiks/">> Custom Rubik's Cube Simulator</a></h3>
-                 <p>A graphics simulation program allowing users to upload .obj files to be converted into a fully interactable & playable, 2x2x2 Rubik's cube </p>
-                 <p><strong>Stack:</strong> Javascript, WebGL</p>
-             </div>
-         </div>
-        <div class="project-card">
-            <img src="assets/icons/cubes.png" class="project-icon">
+        <div class ="project-media">
+            <img src="assets/colortaiko.gif" width="47%">
+            <img src="assets/ColorTaiko__Sp25-1.png" width="50%" alt="">
+        </div>
+        <!-- <div class="spacer"></div> -->
+    </div>
+    <!-- <div class="project-card">
+        <div class ="project-title">
             <div class="project-details">
-                <h3><a href="https://github.com/chrisMonzon/block_simulator">> Building Block Simulator</a></h3>
-                <p>A graphics simulation program allowing users to create and manipulate cubes in a 3D space</p>
+                <div class ="project-title">
+                    <img src="assets/icons/nodes.png" class="project-icon">
+                    <h3><a href="https://play.math.illinois.edu/ColorTaiko!/">&#8203Research: ColorTaiko!</a></h3>
+                </div>
+                <p>A web-based game I'm contributing to under the Illinois Mathematics Lab (IML).</p>
+                <p>Working with Professor Igor Mineyev and a team to produce counterexamples to Kaplansky conjectures.</p>
+                <p><strong>Stack:</strong> React, JavaScript</p>
+            </div>
+        </div>
+        <div class ="project-media">
+            <img src="assets/colortaiko.gif" width="47%">
+            <img src="assets/ColorTaiko__Sp25-1.png" width="50%" alt="">
+        </div>
+    </div> -->
+
+    <!-- JolliBuy -->
+    <div class="project-card">
+        <div class ="project-title">
+            <div class="project-details">
+                <div class ="project-title">
+                    <img src="assets/icons/shopping.png" class="project-icon">
+                    <h3><a href="https://jollibuy.vercel.app/">JolliBuy</a></h3>
+                </div>
+                <p>An online market promoting Filipino small businesses in Illinois.</p>
+                <p>As part of the Philippine Student Assoication's Tech Team, I worked on the full stack, having lead the frontend development.</p>
+                <div class="spacer"></div>
+                <p><strong>Stack:</strong> React, Python, JavaScript, Django</p>
+            </div>
+        </div>
+        <div class ="project-media">
+            <img src="assets/jollibuy.gif" width="70%">
+        </div>
+        <!-- <div class="spacer"></div> -->
+    </div>
+    <!-- Block Simulator -->
+    <div class="project-card">
+        <div class ="project-title">
+            <div class="project-details">
+                <div class ="project-title">
+                    <img src="assets/icons/cubes.png" class="project-icon">
+                    <h3><a href="https://github.com/chrisMonzon/block_simulator">Building Block <br>Simulator</a></h3>
+                </div>
+                <div class="spacer"></div>
+                <!-- <div class="spacer"></div> -->
+                <!-- <div class="spacer"></div> -->
+                <p>A graphics simulation program allowing users to create and manipulate cubes in 3D space.</p>
                 <p><strong>Stack:</strong> C++, OpenGL</p>
             </div>
         </div>
-        <div class="project-card">
-             <img src="assets/icons/plane.png" class="project-icon">
-             <div class="project-details">
-                 <h3><a href="https://github.com/chrisMonzon/excursia">> Excursia</a></h3>
-                 <p>A website built by me and three other students that web scrapes and displays prices of specific flights from Kayak based on user input.</p>
-                 <p><strong>Stack:</strong> Flask, Python</p>
-             </div>
+        <div class ="project-media">
+            <img src="assets/blocksim.gif" width="75%">
+            <div class="project-details">
+                <img src="assets/mario.png" width="100%">
+                <p> > Final result</p>
+            </div>
         </div>
+        <!-- <div class="spacer"></div> -->
+    </div>
+    <!-- Custom Rubik's Cube -->
+    <div class="project-card">
+        <div class ="project-title">
+        <div class="project-details">
+            <div class ="project-title">
+        <img src="assets/icons/rubiks.png" class="project-icon">
+        <h3 font-size="20px"><a href="https://chrismonzon.github.io/CustomRubiks/" >Custom Rubik's Cube Simulator</a></h3>
+        </div>
+        <p>A graphics simulation program allowing users to upload .obj files to be converted into a playable 2x2x2 Rubik's cube.</p>
+        <p><strong>Stack:</strong> JavaScript, WebGL</p>
+        </div>
+        </div>
+        <div class ="project-media">
+            <img src="assets/rubiks.gif" width="70%">
+        </div>
+        <!-- <div class="spacer"></div> -->
+    </div>
 
-        <br><br><br>
-        <hr>
-        <br>
-        <div class="title" id="renders">
-            <strong><i>DESIGNS & RENDERS</i></strong><class>
-        </div>
-        <br>
-        <div class="row2">
+  
+  </div>
+  <br>
+  <br>
+<hr style="width: 53%;">
+<br>
+  <h2 id="renders">DESIGNS/RENDERS</h2>
+  <br>
+  <!-- <div class="render-grid">
+    <div class="render-card"><img src="assets/bochaopt.gif" alt="Bocha"></div>
+    <div class="render-card"><img src="assets/nekodinopt.gif" alt="Neko"></div>
+  </div>
+
+  <div class="logo-grid">
+    <div class="logo-card"><img src="assets/logos/tbp_pimile_logo.png"><p>Tau Beta Pi | Pi Mile Run</p></div>
+    <div class="logo-card"><img src="assets/logos/Hillsdale_robotics_icon.png"><p>Hillsdale Robotics</p></div>
+    <div class="logo-card"><img src="assets/logos/Hillsdale_mock_trial_logo.png"><p>Mock Trial</p></div>
+    <div class="logo-card"><img src="assets/logos/Comic_logo_concept.png"><p>Concept Comic Logo</p></div>
+    <div class="logo-card"><img src="assets/logos/rso_search_logo.png"><p>RSO Search App Logo</p></div>
+    <div class="logo-card"><img src="assets/logos/animloop.gif"><p>RSO Search App – Loading</p></div>
+  </div> -->
+  <div class="row2">
             <div class="render-card">
                 <img src="assets/bochaopt.gif" alt="Bocha" >
             </div>
@@ -189,10 +260,35 @@
                 </div>
             </div>
         </div>
-    </main>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".carousel-track");
+  const videos = Array.from(track.children);
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
 
-    <footer>
-        <p>&copy; 2025 Christopher Monzon</p>
-    </footer>
+  let index = 0;
+
+  function updateCarousel() {
+    track.style.transform = `translateX(-${index * 320}px)`; // 320 = video width
+  }
+
+  prevBtn.addEventListener("click", () => {
+    index = (index - 1 + videos.length) % videos.length;
+    updateCarousel();
+  });
+
+  nextBtn.addEventListener("click", () => {
+    index = (index + 1) % videos.length;
+    updateCarousel();
+  });
+});
+</script>
+
+</main>
+
+  <footer>
+    <p>&copy; 2025 Christopher Monzon</p>
+  </footer>
 </body>
 </html>
