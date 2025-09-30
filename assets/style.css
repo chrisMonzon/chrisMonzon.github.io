@@ -68,10 +68,10 @@ h2 {
 
 
 .profile-icon img{
-  width: 200px;       /* or try 300px */
-  height: auto;       /* keep aspect ratio */
-  border-radius: 50%; /* keeps circular crop */
-  filter: none;       /* don’t invert colors */
+  width: 200px;       
+  height: auto;       
+  border-radius: 50%; 
+  filter: none;       
 }
 
 .social-icons {
@@ -269,7 +269,7 @@ footer {
 
 .project-card.jumpxr {
   display: flex;
-  flex-direction: row;   /* side by side */
+  flex-direction: row;  
   gap: 25px;
   align-items: flex-start;
 }
@@ -286,8 +286,8 @@ footer {
 }
 
 .project-card.sigmobile .project-logo {
-  max-width: none;   /* remove 190px limit */
-  flex: 1;           /* let it grow with the column */
+  max-width: none;   
+  flex: 1;           
   display: block;
   margin: 0 auto;
 }
@@ -295,7 +295,7 @@ footer {
 /* SIGMobile card layout */
 .project-card.sigmobile {
   display: flex;
-  flex-direction: row;  /* put text left, gif right */
+  flex-direction: row; 
   /* gap: 20px; */
   /* align-items: flex-start; */
   align-items: center;
@@ -318,9 +318,9 @@ footer {
   
 }
 
-/* Top navigation bar */
+
 .navbar {
-  position: sticky;       /* sticks to top when scrolling */
+  position: sticky;      
   top: 0;
   width: 100%;
   background-color: #2c3e50;
@@ -328,7 +328,7 @@ footer {
   justify-content: center;
   gap: 40px;
   padding: 15px 0;
-  z-index: 1000;          /* stay above other elements */
+  z-index: 1000;         
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
@@ -347,7 +347,7 @@ footer {
 }
 
 .project-card {
-  width: 750px;              /* uniform width for all cards */
+  width: 750px;             
   max-width: 90%;
   background: #2a2f3a;
   border-radius: 12px;
@@ -366,28 +366,28 @@ footer {
 .project-card.sigmobile .media {
   flex: 1;
   display: flex;
-  justify-content: flex-start; /* align to the left of its flex area */
+  justify-content: flex-start; 
   align-items: center;
   padding-left: 20px;
 }
 
 .project-card.sigmobile .screenshot {
-  max-width: 100%;  /* use full available space */
+  max-width: 100%; 
   /* margin-top: -20px; */
 }
 
 .project-card.sigmobile .project-logo {
 
-  max-width: none;             /* remove the 190px cap */
-  display: flex;               /* use flexbox to center contents */
-  justify-content: center;     /* horizontal centering */
+  max-width: none;             
+  display: flex;               
+  justify-content: center;     
 }
 
 /* Logo image sizing */
 .project-card.sigmobile .project-logo img {
     margin-top: -10px;
-  width: 80%;     /* or try 80% if you want some margin */
-  max-width: 400px;  /* keeps it from blowing up too big */
+  width: 80%;       
+  max-width: 400px; 
   height: auto;
 }
 
@@ -424,18 +424,18 @@ footer {
 }
 
 .project-title a {
-  color: white;           /* make text white */
-  text-decoration: none;  /* remove underline */
+  color: white;         
+  text-decoration: none; 
 }
 
 .project-title a:hover {
-  color: #e0db79;         /* optional: gold hover */
-  text-decoration: underline; /* or keep none */
+  color: #e0db79;           
+  text-decoration: underline;
 }
 
 .carousel {
   position: relative;
-  width: 320px;      /* set desired width */
+  width: 320px;      
   overflow: hidden;
 }
 
@@ -445,7 +445,7 @@ footer {
 }
 
 .carousel video {
-  width: 450px;      /* same as carousel width */
+  width: 450px;     
   flex-shrink: 0;
   border-radius: 8px;
 }
