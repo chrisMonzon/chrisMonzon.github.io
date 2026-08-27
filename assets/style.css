@@ -1,577 +1,1439 @@
+/* ========================================
+   MAIN
+======================================== */
+
 main {
-  /* margin-left: 150px; same as .sidebar width */
-  padding-left: 65px;
-  padding-right: 65px;
+    padding-left: 65px;
+    padding-right: 65px;
 }
 
-.spacer {
-  height: 5px;
-  width: 100%;  
-}
 
-header {
-/* margin-left: 150px; */
-  text-align: center;
-  padding-top: 2rem;
-}
+/* ========================================
+   GENERAL
+======================================== */
 
 body {
-  font-family: "JetBrains Mono", monospace;
-  background: #1b1e26;
-  color: #fff;
-  margin: 0;
-  padding-left: 0 2rem;
-  padding-right: 0 2rem;
-  line-height: 1.6;
-  /* transform: scale(0.75); */
-  /* zoom: 81%; */
+    font-family: "Space Mono", monospace;
+
+    background: #ffffff;
+    color: rgb(39, 39, 39);
+
+    margin: 0;
+
+    line-height: 1.6;
 }
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+header {
+    text-align: center;
+    padding-top: 2rem;
+}
+
 
 h1 {
-  color: #e0db79;
-  text-align: center;
-  margin: 2rem 0 1rem;
+    color: rgb(39, 39, 39);
+    text-align: center;
+
+    margin: 2rem 0 1rem;
 }
+
 
 h2 {
-  color: #e0db79;
-  text-align: center;
-  margin: 2rem 0 1rem;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 3rem;
-}
+    color: #e0db79;
+    text-align: center;
 
-.sidebar {
-  position: fixed;
-  top: 0; left: 0;
-  width: 180px;
-  height: 100%;
-  background: #2c3e50;
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-}
+    margin: 2rem 0 1rem;
 
-.sidebar a {
-  color: #fff;
-  padding: 15px;
-  text-align: center;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-.sidebar a:hover {
-  background: #34495e;
-  border-radius: 5px;
+    font-weight: bold;
+    font-style: italic;
+
+    font-size: 3rem;
 }
 
 
+/* ========================================
+   PROFILE
+======================================== */
 
-.profile-icon img{
-  width: 200px;       
-  height: auto;       
-  border-radius: 50%; 
-  filter: none;       
+.profile-icon {
+    display: flex;
+    justify-content: center;
 }
+
+.profile-icon img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    filter: none;
+}
+
+.natureguessr-img {
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+/* ========================================
+   SOCIAL ICONS
+======================================== */
 
 .social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  margin: 1rem 0;
+    display: flex;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    margin: 1rem 0;
 }
+
+
 .social-icons img {
-  width: 40px; height: 40px;
-  filter: invert(100%);
-  transition: transform 0.3s;
+    width: 40px;
+    height: 40px;
+
+    transition: transform 0.3s;
 }
+
+
 .social-icons img:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
+
+
+/* ========================================
+   ABOUT + PORTFOLIO LAYOUT
+======================================== */
+
+.about-layout {
+    display: grid;
+
+    grid-template-columns: 35% 65%;
+    gap: 0;
+
+    height: calc(100vh - 125px);
+
+    max-width: 1700px;
+
+    margin: 0 auto;
+
+    align-items: stretch;
+
+    /*
+     * Important:
+     * Keeps the overall page layout fixed while
+     * allowing the tab content itself to scroll.
+     */
+    min-height: 0;
+
+    overflow: hidden;
+}
+
+
+/* ========================================
+   ABOUT ME
+======================================== */
+
+.intro {
+    width: 100%;
+
+    padding-right: 2.5rem;
+
+    box-sizing: border-box;
+
+    min-width: 0;
+}
+
+/* .intro h1 {
+    text-align: center;
+} */
+
+.intro h2 {
+    /* text-align: left; */
+
+    font-size: 2.5rem;
+
+    margin-top: 0;
+
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
 
 .intro ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-  font-size: 1rem;
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    text-align: center;
+
+    font-size: 0.8rem;
 }
+
+
 .intro li {
-  margin: 10px 0;
-}
-/* .intro {
-    margin-top: 10px;   
-} */
-.project-details {
-  flex: 1;
+    margin: 25px 0;
 }
 
 
-.project-logo img{
-  /* max-width: 300px; */
-  width: 480px;
-  /* padding-left: 100px; */
-  display: block;
-  /* margin-bottom: 1rem; */
-}
+/* ========================================
+   PORTFOLIO TABS
+======================================== */
 
-.project-card.sigmobile .project-logo img {
-  width: 140%;    
-  height: auto;   
-}
+.portfolio-tabs {
+    display: flex;
 
-.project-card ul {
-  margin: 0; padding-left: 1.2rem;
-}
-.media {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 0px;
-}
-/* 
-.media {
-  display: flex;
-  justify-content: center;   
-  align-items: center;       
-  height: 100%;              
-} */
+    flex-direction: column;
 
-.media iframe {
-  width: 300px;
-  height: 300px;
-  border: none;
-  margin-bottom: 10px;
-  border-radius: 8px;
-}
+    height: 100%;
 
-video {
-    /* width: 280px !important;
-    height: 280px !important; */
-    max-width: 100%;
-    /* display: block;     */
-    border: none;
-    margin-bottom: 10px;
-    margin-right: 0px;
-    border-radius: 8px;
-    /* object-fit: cover; */
+    min-height: 0;
+    min-width: 0;
+
     overflow: hidden;
-    margin: 0; 
-    
 }
 
-.media img {
-  width: 300px;
-  height: auto;
-  border: none;
-  margin-bottom: 10px;
-  border-radius: 8px;
-}
-.thumbs {
-  display: flex;
-  gap: 10px;
-}
-.thumbs video {
-  width: 119px !important;
-  height: 119px !important;
+
+/* ========================================
+   TAB BUTTONS
+======================================== */
+
+.tab-buttons {
+    display: flex;
+
+    flex-shrink: 0;
+
+    gap: 0.5rem;
+
+    /* padding-bottom: 1rem; */
+
+    background: transparent;
 }
 
-.render-grid, .logo-grid {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-.render-card, .logo-card {
-  background: #2a2f3a;
-  border-radius: 12px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s;
-}
-.render-card:hover, .logo-card:hover {
-  transform: scale(1.05);
-}
-.render-card img, .logo-card img {
-  max-width: 180px;
-  border-radius: 8px;
-}
-.logo-card p {
-  font-size: 0.85rem;
-  margin-top: 10px;
-  color: #000000;
+
+.tab-button {
+    font-family: "Space Mono", monospace;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    padding: 12px 25px;
+
+    background: #ecebeb;
+
+    color: rgb(39, 39, 39);
+
+    border: none;
+
+    border-radius: 8px 8px 0 0;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
 }
 
-footer {
-  text-align: center;
-  margin: 3rem 0 1rem;
-  font-size: 0.8rem;
-  color: #aaa;
+
+.tab-button:hover {
+    background: #c5c5c5;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  /* grid-template-columns: 1fr; */
-  column-gap: 20px;
-  row-gap: 20px;
-  margin: 1rem 0;
-  padding: 30px;
+
+.tab-button.active {
+    background: #dbdbdb;
+
+    color: rgb(39, 39, 39);
+}
+
+
+/* ========================================
+   TAB CONTENT
+======================================== */
+
+/*
+ * Hide every tab by default.
+ *
+ * This is what makes PROJECTS invisible
+ * when EXPERIENCE is selected, and vice versa.
+ */
+
+.tab-content {
+    display: none;
+}
+
+
+/*
+ * Only the active tab is displayed.
+ *
+ * This element is the ONLY vertical scrolling
+ * container in the portfolio section.
+ */
+
+.tab-content.active {
+    display: block;
+
+    background-color: #dbdbdb;
+
+    box-sizing: border-box;
+
+    flex: 1 1 0;
+
+    min-height: 0;
+    min-width: 0;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding: 2rem;
+    /* padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem; */
+    padding-bottom: 4rem;
+
+    border-radius: 0 0 12px 12px;
+}
+
+
+/* ========================================
+   TAB SCROLLBAR
+======================================== */
+
+.tab-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+.tab-content::-webkit-scrollbar-thumb {
+    background: #2c3e50;
+
+    border-radius: 10px;
+}
+
+
+.tab-content::-webkit-scrollbar-track {
+    background: #eeeeee;
+}
+
+
+/* ========================================
+   PROJECT CARDS
+======================================== */
+
+.project-card {
+    background-color: white;
+
+    border-radius: 10px;
+
+    padding: 1.5rem;
+
+    margin-bottom: 1.5rem;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.project-card:last-child {
+    margin-bottom: 2rem;
 }
 
 
 .project-card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
+
+
+/* ========================================
+   PROJECT CARD IMAGES
+======================================== */
 
 .project-card img {
-  max-width: 90%;
-  border-radius: 8px;
-  margin-top: 0;
+    max-width: 90%;
+
+    border-radius: 8px;
+
+    margin-top: 0;
 }
+
 
 .project-card iframe {
-  max-width: 100%;
-  border-radius: 8px;
+    max-width: 100%;
+
+    border-radius: 8px;
 }
 
-/* Clean up text inside */
+
+/* ========================================
+   PROJECT DETAILS
+======================================== */
+
+.project-details {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
 .project-details h3 {
-  margin: 0.5rem 0;
-  font-size: 30px;
+    margin: 0.5rem 0;
+    color: rgb(39, 39, 39);
+    font-size: 30px;
 }
+
+
 .project-details p {
-  font-size: 0.8rem;
-  margin: 0.3rem 0;
+    font-size: 0.8rem;
+
+    margin: 0.5rem 0;
 }
+
+
+/* ========================================
+   PROJECT LOGOS
+======================================== */
 
 .project-logo {
-  max-width: 190px;
-  margin-bottom: 1rem;
-  margin-top: -20px;
-  display: block;
+    max-width: 190px;
+
+    margin-bottom: 1rem;
+
+    margin-top: -20px;
+
+    display: block;
 }
+
+
+.project-logo img {
+    width: 480px;
+
+    display: block;
+}
+
+
+/* ========================================
+   WHERE2 LOGO
+======================================== */
+
+.project-card.sigmobile .project-logo img {
+    width: 140%;
+
+    height: auto;
+}
+
+
+/* ========================================
+   MOTOROLA LOGO
+======================================== */
+
+.project-logo00 {
+    width: 100% !important;
+
+    max-width: 225px !important;
+
+    height: auto;
+
+    /* margin-bottom: 1rem; */
+    margin: 0 auto 1rem auto;
+
+    display: block;
+}
+
+
+/* ========================================
+   JUMP LOGO
+======================================== */
 
 .project-logo0 {
-  max-width: 190px;
-  margin-bottom: 1rem;
-  /* margin-top: -20px; */
-  display: block;
-}
+    max-width: 190px;
 
-.screenshot {
-  max-width: 100%;
-  border-radius: 12px;
-  display: block;
-  margin: 0 auto;
+    margin-bottom: 1rem;
+
+    display: block;
 }
 
 
-.project-card.jumpxr {
-  display: flex;
-  flex-direction: row;  
-  gap: 25px;
-  align-items: flex-start;
-}
+/* ========================================
+   PROJECT TITLE
+======================================== */
 
-/* .project-card.jumpxr .project-details {
-  flex: 1;
-} */
+.project-title {
+    display: flex;
 
-.project-card.jumpxr .media {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    flex-direction: row;
 
-.project-card.sigmobile .project-logo {
-  max-width: none;   
-  flex: 1;           
-  display: block;
-  margin: 0 auto;
-}
+    justify-content: flex-start;
 
-/* SIGMobile card layout */
-.project-card.sigmobile {
-  display: flex;
-  flex-direction: row; 
-  /* gap: 20px; */
-  /* align-items: flex-start; */
-  align-items: center;
-}
+    align-items: center;
 
-.project-card.sigmobile .project-details {
-  flex: 1;
-}
+    color: white;
 
-.project-card.sigmobile .media {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.project-card.sigmobile .screenshot {
-  max-width: 90%;
-  border-radius: 12px;
-  
+    gap: 15px;
 }
 
 
-.navbar {
-  position: sticky;      
-  top: 0;
-  width: 100%;
-  background-color: #2c3e50;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 15px 0;
-  z-index: 1000;         
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+.project-title a {
+    color: rgb(39, 39, 39);
+
+    text-decoration: none;
 }
 
-.navbar a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s, background 0.3s;
-  padding: 8px 12px;
-  border-radius: 5px;
+
+.project-title a:hover {
+    color: #e0db79;
+
+    text-decoration: underline;
 }
 
-.navbar a:hover {
-  background-color: #34495e;
-  color: #e0db79; /* gold highlight */
-}
 
-.project-card {
-  width: 750px;             
-  max-width: 90%;
-  background: #2a2f3a;
-  border-radius: 12px;
-  padding: 30px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 20px;
-  margin: .25rem auto;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s;
-}
-
-.project-card.sigmobile .media {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start; 
-  align-items: center;
-  padding-left: 20px;
-}
-
-.project-card.sigmobile .screenshot {
-  max-width: 100%; 
-  /* margin-top: -20px; */
-}
-
-.project-card.sigmobile .project-logo {
-
-  max-width: none;             
-  display: flex;               
-  justify-content: center;     
-}
-
-/* Logo image sizing */
-.project-card.sigmobile .project-logo img {
-    margin-top: -10px;
-  width: 80%;       
-  max-width: 400px; 
-  height: auto;
-}
+/* ========================================
+   PROJECT ICON
+======================================== */
 
 .project-icon {
     width: 50px;
+
     height: 50px;
-    margin-right: 10px; 
-    margin-left: 5px; 
+
+    margin-right: 10px;
+
+    margin-left: 5px;
+
     margin-top: 1px;
+
     border-radius: 5px;
-    display: block; 
-    filter: invert(100%); 
+
+    display: block;
+
+    /* filter: invert(100%); */
 }
 
 
-.project-title {
-    display: flex;  
-    flex-direction: row;
-    justify-content: flex-start;
+/* ========================================
+   MEDIA
+======================================== */
+
+.media {
+    display: flex;
+
+    flex-direction: column;
+
     align-items: center;
-    color: white;
-    gap: 15px;
+
+    margin-bottom: 0;
 }
+
+
+.media img {
+    width: 300px;
+
+    height: auto;
+
+    border: none;
+
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+}
+
+
+.media iframe {
+    width: 300px;
+
+    height: 300px;
+
+    border: none;
+
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+}
+
+
+.screenshot {
+    max-width: 100%;
+
+    border-radius: 12px;
+
+    display: block;
+
+    margin: 0 auto;
+}
+
+
+.screenshot2 {
+    max-width: 50px;
+
+    border-radius: 12px;
+
+    display: block;
+
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   INTERNSHIP CARD LAYOUT
+======================================== */
+
+.tab-content .project-card.sigmobile,
+.tab-content .project-card.jumpxr {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.tab-content .project-card.sigmobile .project-details,
+.tab-content .project-card.jumpxr .project-details {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.tab-content .project-card.sigmobile .media,
+.tab-content .project-card.jumpxr .media {
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.tab-content .project-card.sigmobile .screenshot {
+    max-width: 100%;
+
+    border-radius: 12px;
+}
+
+
+/* ========================================
+   SIGMOBILE
+======================================== */
+
+.project-card.sigmobile {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+}
+
+
+.project-card.sigmobile .project-details {
+    flex: 1;
+}
+
+
+.project-card.sigmobile .media {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: flex-start;
+
+    align-items: center;
+
+    padding-left: 20px;
+}
+
+
+.project-card.sigmobile .screenshot {
+    max-width: 100%;
+}
+
+
+.project-card.sigmobile .project-logo {
+    max-width: none;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.project-card.sigmobile .project-logo img {
+    margin-top: -10px;
+
+    width: 80%;
+
+    max-width: 400px;
+
+    height: auto;
+}
+
+
+/* ========================================
+   JUMP XR
+======================================== */
+
+.project-card.jumpxr {
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 25px;
+
+    align-items: flex-start;
+}
+
+
+.project-card.jumpxr .media {
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+/* ========================================
+   PROJECT MEDIA
+======================================== */
 
 .project-media {
-    display: flex;  
+    display: flex;
+
     flex-direction: row;
+
     justify-content: center;
+
     align-items: center;
-    color: white;
+
+    color: rgb(39,39,39);
+
     margin-top: 20px;
+
     gap: 15px;
+
     align-self: stretch;
+
+    width: 100%;
 }
 
-.project-title a {
-  color: white;         
-  text-decoration: none; 
+.project-media0 {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: rgb(39,39,39);
+
+    margin-top: 20px;
+
+    gap: 15px;
+
+    align-self: stretch;
+
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 4px;
 }
 
-.project-title a:hover {
-  color: #e0db79;           
-  text-decoration: underline;
+.tab-content .project-media img {
+    max-width: 48%;
+
+    height: auto;
 }
+
+.tab-content .project-media img {
+    max-width: 48%;
+    border: 0.5px solid #000;
+    border-radius: 4px;
+    height: auto;
+}
+
+
+
+/* ========================================
+   VIDEO
+======================================== */
+
+video {
+    max-width: 100%;
+
+    border: none;
+
+    margin-bottom: 10px;
+
+    margin-right: 0;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    margin: 0;
+}
+
+
+/* ========================================
+   CAROUSEL
+======================================== */
 
 .carousel {
-  position: relative;
-  width: 320px;      
-  overflow: hidden;
+    position: relative;
+
+    width: 320px;
+
+    overflow: hidden;
 }
+
 
 .carousel-track {
-  display: flex;
-  transition: transform 0.4s ease-in-out;
+    display: flex;
+
+    transition:
+        transform 0.4s ease-in-out;
 }
+
 
 .carousel video {
-  width: 450px;     
-  flex-shrink: 0;
-  border-radius: 8px;
+    width: 450px;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
 }
+
 
 .carousel button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  border: none;
-  color: white;
-  font-size: 2rem;
-  padding: 0 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  z-index: 2;
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    background: rgba(0, 0, 0, 0.5);
+
+    border: none;
+
+    color: white;
+
+    font-size: 2rem;
+
+    padding: 0 10px;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+
+    z-index: 2;
 }
 
-.carousel .prev { left: 5px; }
-.carousel .next { right: 5px; }
 
-.row2 {
-    display: flex; 
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 30px;
-    /* padding-left: 36px; */
+.carousel .prev {
+    left: 5px;
 }
 
+
+.carousel .next {
+    right: 5px;
+}
+
+
+/* ========================================
+   THUMBNAILS
+======================================== */
+
+.thumbs {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.thumbs video {
+    width: 119px !important;
+
+    height: 119px !important;
+}
+
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 1rem 5%;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    background: inherit;
+
+    background-color: #1e293b;
+}
+
+
+/* NAME */
+
+.navbar-name {
+    font-size: 1.7rem;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    color: white;
+}
+
+
+/* SOCIAL ICONS */
+
+.navbar-social-icons {
+    display: flex;
+
+    align-items: center;
+
+    filter: invert();
+
+    gap: 1rem;
+}
+
+
+.navbar-social-icons a {
+    display: flex;
+
+    align-items: center;
+}
+
+
+.navbar-social-icons img {
+    width: 40px;
+
+    height: 40px;
+
+    object-fit: contain;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+.navbar-social-icons img:hover {
+    transform: translateY(-2px);
+
+    opacity: 0.7;
+}
+
+
+/* ========================================
+   OLD GRID SUPPORT
+======================================== */
+
+.projects-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(600px, 1fr));
+
+    column-gap: 20px;
+
+    row-gap: 20px;
+
+    margin: 1rem 0;
+
+    padding: 30px;
+}
+
+
+/* ========================================
+   LOGO / DESIGN GRID
+======================================== */
+
+.render-grid,
+.logo-grid {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+.render-card,
 .logo-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    background: linear-gradient(180deg, rgba(107,102,143,1) 0%, rgba(188,231,230,1) 44%, rgba(254,254,254,1) 100%);
-    border-radius: 10px;
+    background: #2a2f3a;
+
+    border-radius: 12px;
+
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    outline: 0.5px solid #ffffff;
-    transition: transform 0.3s ease, outline-color 0.3s ease, box-shadow 0.3s ease;
-    min-width: 200px; 
-    max-width: 200px; 
-    min-height: 200px;
-    
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.3);
+
+    transition:
+        transform 0.3s;
 }
 
+
+.render-card:hover,
 .logo-card:hover {
-    transform: scale(1.05); 
-    outline-color: #e0db79; 
-    box-shadow: 0 6px 12px rgba(255, 255, 0, 0.4); 
+    transform: scale(1.05);
 }
 
-.logo-text {
-    font-size: 14px;
-    color: #333;
-    margin: 0;
-    font-style: italic;
-    /* margin-top: 5px;  */
+
+.render-card img,
+.logo-card img {
+    max-width: 180px;
+
+    border-radius: 8px;
 }
 
-.logo-container > div {
-    display: flex;
-    gap: 20px;
+
+.logo-card p {
+    font-size: 0.85rem;
+
+    margin-top: 10px;
+
+    color: rgb(39, 39, 39);
 }
+
+
+/* ========================================
+   LOGO CARDS
+======================================== */
 
 .logo-container {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin-bottom: 20px; 
-}
 
-.logo-card img {
-    max-width: 200px; 
-    max-height: 200px;
-    filter: brightness(125%);
-    object-fit: contain;
-}
+    justify-content: center;
 
-.render-card {
-    width: 20rem;
-    height: 20rem;
-    min-width: 20rem;
-    min-height: 20rem;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(180deg, rgba(107,102,143,1) 0%, rgba(188,231,230,1) 44%, rgba(254,254,254,1) 100%);
-    border-radius: 10px;
-    /* padding: 15px; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    outline: 0.5px solid #ffffff;
-    transition: transform 0.3s ease, outline-color 0.3s ease, box-shadow 0.3s ease;
-    
+
+    margin-bottom: 20px;
 }
 
-.render-card img {
-    /* max-width: 400px;  */
-    max-width: 100%;
-    /* max-height: 400px; */
-    height: auto;
-    filter: brightness(125%);
-    margin-right: 0px;
-    object-fit: contain;
-    overflow:auto;
-}
 
-.render-details {
+.logo-container > div {
     display: flex;
+
+    gap: 20px;
+}
+
+
+.logo-card {
+    display: flex;
+
     flex-direction: column;
-    margin-left: 20px;
-    font-size: 30px;
-    margin-top: 10px;
-    color: #000000;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(107,102,143,1) 0%,
+            rgba(188,231,230,1) 44%,
+            rgba(254,254,254,1) 100%
+        );
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    box-shadow:
+        0 4px 8px rgba(0, 0, 0, 0.2);
+
+    outline:
+        0.5px solid #ffffff;
+
+    transition:
+        transform 0.3s ease,
+        outline-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+    min-width: 200px;
+
+    max-width: 200px;
+
+    min-height: 200px;
+}
+
+
+.logo-card:hover {
+    transform: scale(1.05);
+
+    outline-color: #e0db79;
+
+    box-shadow:
+        0 6px 12px rgba(255, 255, 0, 0.4);
+}
+
+
+.logo-text {
+    font-size: 14px;
+
+    color: #333;
+
+    margin: 0;
+
     font-style: italic;
 }
 
-.render-bullets {
-    display: flex;
-    font-size: 20px;
-    margin-top: 10px;
-    color: #000000;
+
+.logo-card img {
+    max-width: 200px;
+
+    max-height: 200px;
+
+    filter: brightness(125%);
+
+    object-fit: contain;
 }
 
+
+/* ========================================
+   RENDER CARDS
+======================================== */
+
+.render-card {
+    width: 20rem;
+
+    height: 20rem;
+
+    min-width: 20rem;
+
+    min-height: 20rem;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(107,102,143,1) 0%,
+            rgba(188,231,230,1) 44%,
+            rgba(254,254,254,1) 100%
+        );
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 8px rgba(0, 0, 0, 0.2);
+
+    outline:
+        0.5px solid #ffffff;
+
+    transition:
+        transform 0.3s ease,
+        outline-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.render-card img {
+    max-width: 100%;
+
+    height: auto;
+
+    filter: brightness(125%);
+
+    margin-right: 0;
+
+    object-fit: contain;
+
+    overflow: auto;
+}
+
+
 .render-card:hover {
-    transform: scale(1.05); 
-    outline-color: #e0db79; 
-    box-shadow: 0 6px 12px rgba(255, 255, 0, 0.4); 
+    transform: scale(1.05);
+
+    outline-color: #e0db79;
+
+    box-shadow:
+        0 6px 12px rgba(255, 255, 0, 0.4);
+}
+
+
+/* ========================================
+   RENDER DETAILS
+======================================== */
+
+.render-details {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-left: 20px;
+
+    font-size: 30px;
+
+    margin-top: 10px;
+
+    color: rgb(39, 39, 39);
+
+    font-style: italic;
+}
+
+
+.render-bullets {
+    display: flex;
+
+    font-size: 20px;
+
+    margin-top: 10px;
+
+    color: rgb(39, 39, 39);
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    text-align: center;
+
+    margin: 3rem 0 1rem;
+
+    font-size: 0.8rem;
+
+    color: #aaa;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 900px) {
+
+    main {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+
+    .about-layout {
+        display: grid;
+
+        grid-template-columns: 45% 55%;
+
+        height: calc(100vh - 85px);
+
+        margin: 0 auto;
+
+        align-items: stretch;
+
+        min-height: 0;
+
+        overflow: hidden;
+    }
+
+
+    .intro {
+        width: 100%;
+
+        padding-right: 20px;
+
+        min-width: 0;
+    }
+
+
+    .intro h2 {
+        text-align: center;
+
+        font-size: 2.5rem;
+    }
+
+
+    .intro ul {
+        text-align: center;
+    }
+
+
+    .portfolio-tabs {
+        display: flex;
+
+        flex-direction: column;
+
+        height: 100%;
+
+        min-height: 0;
+
+        min-width: 0;
+
+        overflow: hidden;
+    }
+
+
+    .tab-content.active {
+        flex: 1 1 0;
+
+        min-height: 0;
+
+        overflow-y: auto;
+
+        overflow-x: hidden;
+
+        padding-bottom: 4rem;
+    }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        gap: 10px;
+
+        padding: 10px 0;
+    }
+
+
+    .navbar a {
+        font-size: 0.8rem;
+
+        padding: 6px 8px;
+    }
+
+
+    .profile-icon img {
+        width: 150px;
+    }
+
+
+    /* ========================================
+       MOBILE TABS
+    ======================================== */
+
+    .tab-buttons {
+        display: flex;
+
+        gap: 0.5rem;
+
+        margin-bottom: 0;
+
+        padding-bottom: 0;
+    }
+
+
+    .tab-button {
+        background-color: #d0d0d0;
+
+        border: none;
+
+        padding: 0.75rem 1.5rem;
+
+        border-radius: 8px 8px 0 0;
+
+        cursor: pointer;
+    }
+
+
+    .tab-button.active {
+        background-color: #e5e5e5;
+    }
+
+
+    /* ========================================
+       MOBILE TAB CONTENT
+    ======================================== */
+
+    .tab-content.active {
+        height: auto;
+
+        flex: 1 1 0;
+
+        min-height: 0;
+
+        padding-right: 5px;
+
+        padding-bottom: 4rem;
+
+        overflow-y: auto;
+
+        overflow-x: hidden;
+    }
+
+
+    /* ========================================
+       MOBILE PROJECT CARDS
+    ======================================== */
+
+    .tab-content .project-card.sigmobile,
+    .tab-content .project-card.jumpxr {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .tab-content .project-card.sigmobile .media,
+    .tab-content .project-card.jumpxr .media {
+        padding-left: 0;
+
+        width: 100%;
+    }
+
+
+    .project-media {
+        flex-direction: column;
+    }
+
+
+    .tab-content .project-media img {
+        max-width: 100%;
+
+        width: 100% !important;
+    }
+
+
+    .carousel {
+        width: 100%;
+    }
+
+
+    .carousel video {
+        width: 100%;
+    }
+
+
+    .project-card {
+        padding: 20px;
+    }
 }
