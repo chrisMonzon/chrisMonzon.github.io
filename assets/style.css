@@ -382,6 +382,13 @@ h2 {
     min-width: 0;
 }
 
+.project-details2 {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
 
 .project-details h3 {
     margin: 0.5rem 0;
@@ -389,8 +396,19 @@ h2 {
     font-size: 30px;
 }
 
+.project-details2 h3 {
+    margin: 0.5rem 0;
+    color: rgb(39, 39, 39);
+    font-size: 25px;
+}
 
 .project-details p {
+    font-size: 0.8rem;
+
+    margin: 0.5rem 0;
+}
+
+.project-details2 p {
     font-size: 0.8rem;
 
     margin: 0.5rem 0;
@@ -624,12 +642,18 @@ h2 {
     border-radius: 12px;
 }
 
+.tab-content .project-card.sigmobile2 .screenshot {
+    max-width: 130%;
+
+    border-radius: 12px;
+}
+
 
 /* ========================================
    SIGMOBILE
 ======================================== */
 
-.project-card.sigmobile {
+.project-card.sigmobile,  .project-card.sigmobile2 {
     display: flex;
 
     flex-direction: row;
